@@ -23,6 +23,7 @@ public class Processor extends ItemProcessorAdapter<User, User> {
 		String deptcode = user.getDep();
 		String dept = dept_names.get(deptcode);
 		user.setDep(dept);
+		System.out.print(user);
 		return user;
 	}
 }
